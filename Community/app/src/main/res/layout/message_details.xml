@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.ui.WaterActivity">
+    <FrameLayout
+        android:id="@+id/Topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/status"
+        android:background="@color/yello">
+
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/backwhite" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="资讯详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:layout_margin="20dp"
+       android:orientation="vertical"
+       android:weightSum="1">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:textSize="20sp"
+           android:id="@+id/message_title"
+           android:text="有关停水的通知信息"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+           android:id="@+id/message_content"
+           android:background="@drawable/shape"
+           android:text="        今天因为一些原因，二期小区停水半天，望各户提前做好准备。如有问题请联系物业。"
+           android:layout_weight="0.61" />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_gravity="left"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:text="联系人："/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:id="@+id/message_person"
+              android:text="张先生"/>
+   </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_gravity="left"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:text="联系电话："/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:id="@+id/message_tel"
+               android:text="15234251234"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:layout_gravity="right"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:text="日期："/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:id="@+id/message_date"
+               android:text="2018年3月12日"/>
+       </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

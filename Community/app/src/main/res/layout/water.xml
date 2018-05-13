@@ -6,8 +6,14 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.myapplication.ui.WaterActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="交水费页面" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/water_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_water">
+        </ListView>
+    </LinearLayout>
 </LinearLayout>

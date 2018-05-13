@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.myapplication.ui.InformationFragment"
     android:orientation="vertical">
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/yello"/>
     <FrameLayout
         android:id="@+id/Topbar"
         android:layout_width="match_parent"
@@ -41,6 +47,7 @@
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+            android:id="@+id/weather_info"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/button_edge"
@@ -64,13 +71,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:id="@+id/tv_main"
+                    android:id="@+id/info_type"
                     android:text="晴天"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:id="@+id/tv_main_f"
+                    android:id="@+id/info_temperature"
                     android:text="36℃"/>
             </LinearLayout>
             <LinearLayout
@@ -89,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/tv_main_f3"
+                    android:id="@+id/info_quality"
                     android:text="严重污染"/>
             </LinearLayout>
 
@@ -97,6 +104,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/limitnumber_info"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/button_edge"
@@ -126,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:id="@+id/tv_main_f1"
+                    android:id="@+id/tv_erar"
                     android:text="二环里"/>
             </LinearLayout>
             <LinearLayout
@@ -140,13 +148,13 @@
                     android:layout_marginRight="10dp"
                     android:layout_gravity="center"
                     android:id="@+id/tv_main31"
-                    android:text="限行号码"/>
+                    android:text="限行时间"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/tv_main_f33"
-                    android:text="02"/>
+                    android:id="@+id/limit_time"
+                    android:text="私家车：限行时间段为周一至五的早7时至晚20时(法定节假日和公休日不限行)"/>
             </LinearLayout>
 
         </LinearLayout>

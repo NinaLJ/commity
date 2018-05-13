@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/yello">
+
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/Topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/status"
+        android:background="@color/yello">
+
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/backwhite" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="限行限号"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="日期："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/week"
+            android:layout_marginLeft="20dp"
+            android:text="星期日"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/sijia"
+            android:background="@drawable/shape"
+            android:text="私家车"
+            android:layout_weight="0.61" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/sijia_place"
+            android:background="@drawable/shape"
+            android:text="五环"
+            android:layout_weight="0.61" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/gongwu"
+            android:background="@drawable/shape"
+            android:text="公务车"
+            android:layout_weight="0.61" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/gongwu_place"
+            android:background="@drawable/shape"
+            android:text="本市行政区所有道路"
+            android:layout_weight="0.61" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

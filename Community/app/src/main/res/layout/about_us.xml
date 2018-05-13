@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/yello">
+
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/Topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/status"
+        android:background="@color/yello">
+
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/backwhite" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Topbar"
+        android:layout_margin="40dip"
+        android:text="        此软件为一个社区资讯APP，如有任何问题欢迎联系我们。。 "
+        android:textSize="18sp" />
+</RelativeLayout>

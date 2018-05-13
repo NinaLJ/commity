@@ -6,6 +6,12 @@
     tools:context="com.example.administrator.myapplication.ui.InformationFragment"
     android:orientation="vertical">
     <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/yello"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:background="@color/yello"
@@ -22,7 +28,7 @@
         android:layout_height="wrap_content"
         android:background="@color/yello"
         android:layout_margin="10dp"
-        android:text="生活缴费"
+        android:text="生活资讯"
         android:textColor="@android:color/white"
         android:textSize="18sp"/>
     <LinearLayout
@@ -33,21 +39,39 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:id="@+id/water"
+        android:id="@+id/zixun"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <com.example.administrator.myapplication.util.CircleImageView
             android:layout_width="60dp"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             android:layout_gravity="center"
-            android:src="@mipmap/logohua" />
+            android:src="@mipmap/head_new" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="水费"
+            android:text="通知"
             android:gravity="center"
             android:textSize="15sp"/>
     </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/water"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.example.administrator.myapplication.util.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/head_water" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="水费"
+                android:gravity="center"
+                android:textSize="15sp"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -56,9 +80,9 @@
             android:orientation="vertical">
             <com.example.administrator.myapplication.util.CircleImageView
                 android:layout_width="60dp"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/logohua" />
+                android:src="@mipmap/head_elect" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -74,9 +98,9 @@
             android:orientation="vertical">
             <com.example.administrator.myapplication.util.CircleImageView
                 android:layout_width="60dp"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/logohua" />
+                android:src="@mipmap/head_gas" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

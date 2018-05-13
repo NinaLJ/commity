@@ -36,12 +36,15 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/headline" />
+                android:id="@+id/head_imag"
+                android:background="@mipmap/headline1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/head_text"
+                android:textColor="@color/yello"
                 android:text="头条" />
         </LinearLayout>
 
@@ -58,12 +61,14 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:id="@+id/infor_image"
                 android:background="@mipmap/information" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/infor_text"
                 android:text="资讯" />
         </LinearLayout>
 
@@ -80,12 +85,14 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:id="@+id/yule_image"
                 android:background="@mipmap/recreation" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/yule_text"
                 android:text="娱乐" />
         </LinearLayout>
 
@@ -102,13 +109,14 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:background="@mipmap/dynamic1" />
+                android:id="@+id/dynamic_image"
+                android:background="@mipmap/dynamic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/yello"
+                android:id="@+id/dynamic_text"
                 android:text="动态" />
         </LinearLayout>
 
@@ -125,12 +133,14 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:id="@+id/my_image"
                 android:background="@mipmap/myself" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/my_text"
                 android:text="我的" />
         </LinearLayout>
     </LinearLayout>

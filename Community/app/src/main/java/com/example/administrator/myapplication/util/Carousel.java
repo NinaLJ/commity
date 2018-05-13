@@ -28,8 +28,8 @@ public class Carousel extends FrameLayout {
     //存放圆点的ImageView
     private List<ImageView> mDotsIV;
     //待显示图片的资源ID
-    private int[] mDrawableIds = {R.drawable.lunbo1, R.drawable.lunbo2, R.drawable.lunbo3,
-            R.drawable.lunbo4, R.drawable.lunbo5};
+    private int[] mDrawableIds = {R.drawable.lun1, R.drawable.lun2, R.drawable.lun3,
+            R.drawable.lun4, R.drawable.lun5};
     private ViewPager mVP;
     private boolean isAutoPlay;
     private int currentItem;
@@ -144,7 +144,7 @@ public class Carousel extends FrameLayout {
         public void onPageSelected(int position) {
             for (int i = 0; i < mDotsIV.size(); i++) {
                 if (i == position) {
-                    mDotsIV.get(i).setImageResource(R.drawable.dot_focus);
+                    mDotsIV.get(i).setImageResource(R.drawable.dot_yello);
                 } else {
                     mDotsIV.get(i).setImageResource(R.drawable.dot_blur);
                 }
